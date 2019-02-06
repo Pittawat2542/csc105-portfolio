@@ -1,0 +1,41 @@
+li a {
+    text-decoration: none;
+}
+
+
+a li {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid a {
+    color: blue;
+    margin: .2rem;
+    text-align: center;
+}
+
+.grid a img {
+    width: 100%;
+}
+
+.grid-alt {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-alt a {
+    color: blue;
+    margin: .2rem;
+}
+
+.grid-alt a img {
+    width: 100%;
+}
