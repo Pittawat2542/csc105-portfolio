@@ -36,6 +36,17 @@ ul li {
     margin: .2rem;
 }
 
+.grid-alt a {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+}
+
+.grid-alt a p {
+    margin-bottom: 0;
+}
+
+
 .grid-alt a img {
     width: 100%;
 }
