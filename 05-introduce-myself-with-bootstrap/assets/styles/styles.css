@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+hr {
+  background-color: #212121;
+}
+
+#wrapper {
+  background-image: url("../images/bg.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.inner-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+#intro {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+#intro > a {
+  bottom: 3rem;
+  position: absolute;
+  left: 50%;
+  width: 2.8125rem;
+  height: 4.6875rem;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+#intro > a:before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 1.5s infinite;
+  animation: sdb10 1.5s infinite;
+  box-sizing: border-box;
+}
+
+#intro > h1 {
+  font-size: 7rem;
+  font-weight: 300;
+}
+
+#intro > img {
+  margin-bottom: 1.5rem;
+  max-width: 10rem;
+}
+
+#info {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#info > img {
+  border-radius: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 20rem;
+}
+
+#skills {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#skills > h2 {
+  font-size: 3rem;
+}
+
+#skills h4 {
+  font-family: sans-serif;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+#contact {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+footer hr {
+  background-color: white;
+}
+
+footer p {
+  color: white;
+  letter-spacing: 0.025rem;
+}
+
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #intro > h1 {
+    font-size: 2.5rem;
+  }
+
+  #intro > img {
+    max-width: 10rem;
+  }
+
+  #intro > a {
+    display: none;
+  }
+
+  #info > img {
+    max-width: 15rem;
+  }
+}
