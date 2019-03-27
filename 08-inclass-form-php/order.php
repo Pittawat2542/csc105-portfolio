@@ -37,6 +37,7 @@ if (isset($numberOfBicycle) && isset($priceOfBicycle) && isset($numberOfCar) && 
         <div class="jumbotron">
             <h1 class="display-4">You ordered bicycle, car and truck.</h1>
             <hr class="my-4">
+            <p class="lead"><?php echo $numberOfBicycle; ?> Bicycles, <?php echo $numberOfCar; ?> Cars, <?php echo $numberOfTruck; ?> Trucks</p>
             <?php
             if (isset($total)) :
                 ?>
