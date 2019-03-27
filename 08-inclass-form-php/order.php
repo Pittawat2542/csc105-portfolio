@@ -41,6 +41,7 @@ if (isset($numberOfBicycle) && isset($priceOfBicycle) && isset($numberOfCar) && 
             <?php
             if (isset($total)) :
                 ?>
+            <p class="lead"><?php echo $numberOfBicycle; ?> Bicycles, <?php echo $numberOfCar; ?> Cars, <?php echo $numberOfTruck; ?> Trucks</p>
             <p>The total is <?php echo $total . " Baht."; ?> </p>
             <?php else : ?>
             <p class="text-danger"><?php echo $error; ?></p>
